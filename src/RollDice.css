@@ -1,4 +1,43 @@
 .RollDice {
     display: flex;
     justify-content: center;
+    padding-top: 5em;
 }
+
+.shaking{
+    animation-name: shake;
+    animation-duration: 1s;
+}
+.RollDice-button {
+    width: 20em;
+    padding:2em;
+    border:0px;
+    border-radius: 15px;
+    color: rgb(65, 9, 27);
+    background-color: papayawhip;
+    margin-top:3em;
+    font-size: 1.2em;
+}
+
+.RollDice-button:hover {
+    background-color:darkslateblue;
+} 
+
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

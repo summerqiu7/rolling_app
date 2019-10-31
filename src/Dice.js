@@ -9,7 +9,7 @@ class Dice extends Component {
     render() {
         return (
             <div>
-                <i className={`Dice fas fa-dice-${this.props.face}`}></i>
+                <i className={`Dice fas fa-dice-${this.props.face} ${this.props.Rolling &&'shaking'}`}></i>
             </div>
         )
     }

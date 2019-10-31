@@ -1,5 +1,4 @@
 import React from 'react';
-import Dice from './Dice';
 import './App.css';
 import RollDice from './RollDice';
 
